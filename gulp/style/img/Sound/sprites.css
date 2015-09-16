@@ -1,0 +1,16 @@
+.sound-off, .sound-on{
+	background: url(sprites.png) no-repeat;
+}
+
+.sound-off{
+	background-position: -77px 0;
+	width: 79px;
+	height: 79px;
+}
+
+.sound-on{
+	background-position: 0 0;
+	width: 79px;
+	height: 79px;
+}
+

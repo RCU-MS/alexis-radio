@@ -1,0 +1,28 @@
+.season-fall, .season-spring, .season-summer, .season-winter{
+	background: url(sprites.png) no-repeat;
+}
+
+.season-fall{
+	background-position: -472px 0;
+	width: 156px;
+	height: 155px;
+}
+
+.season-spring{
+	background-position: -157px 0;
+	width: 156px;
+	height: 155px;
+}
+
+.season-summer{
+	background-position: -315px 0;
+	width: 156px;
+	height: 155px;
+}
+
+.season-winter{
+	background-position: 0 0;
+	width: 156px;
+	height: 155px;
+}
+
