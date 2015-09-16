@@ -1,0 +1,88 @@
+.tuner-1, .tuner-2, .tuner-3, .tuner-4, .tuner-5, .tuner-6, .tuner-7, .tuner-8, .tuner-9, .tuner-10, .tuner-11, .tuner-12, .tuner-13, .tuner-14{
+	background: url(sprites.png) no-repeat;
+}
+
+.tuner-1{
+	background-position: 0 -1430px ;
+	width: 465px;
+	height: 107px;
+}
+
+.tuner-2{
+	background-position: 0 -1320.0000305175781px ;
+	width: 465px;
+	height: 107px;
+}
+
+.tuner-3{
+	background-position: 0 -1211px ;
+	width: 465px;
+	height: 107px;
+}
+
+.tuner-4{
+	background-position: 0 -1101px ;
+	width: 465px;
+	height: 107px;
+}
+
+.tuner-5{
+	background-position: 0 -990.0000305175781px ;
+	width: 465px;
+	height: 107px;
+}
+
+.tuner-6{
+	background-position: 0 -879px ;
+	width: 465px;
+	height: 107px;
+}
+
+.tuner-7{
+	background-position: 0 -769px ;
+	width: 465px;
+	height: 107px;
+}
+
+.tuner-8{
+	background-position: 0 -660px ;
+	width: 465px;
+	height: 107px;
+}
+
+.tuner-9{
+	background-position: 0 -551px ;
+	width: 465px;
+	height: 107px;
+}
+
+.tuner-10{
+	background-position: 0 -442px ;
+	width: 465px;
+	height: 107px;
+}
+
+.tuner-11{
+	background-position: 0 -331px ;
+	width: 465px;
+	height: 107px;
+}
+
+.tuner-12{
+	background-position: 0 -221px ;
+	width: 465px;
+	height: 107px;
+}
+
+.tuner-13{
+	background-position: 0 -109px ;
+	width: 465px;
+	height: 107px;
+}
+
+.tuner-14{
+	background-position: 0 0;
+	width: 465px;
+	height: 107px;
+}
+
