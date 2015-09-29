@@ -1,16 +1,22 @@
-//Knob class created
+//JSX styling for the tuner button
 var divStyle1 = {position: 'absolute',marginTop: '-26%', marginLeft: '37%'};
+
+//JSX styling for the tuner element 
 var divStyle2 = {marginLeft: '11.5%', marginTop: '-21.5%', position: 'absolute'};
+
+//Knob class created
 var Knob = React.createClass({
   getInitialState: function(){
+    //constructor variable used for detecting if the delta has been changed enough to then start the scroll wheel
     this.i = 0;
-    this.j = 20;
+    //Constructor variable used to do compairson to start the scroll wheel
+    this.j = 10;
     return{subject: 1, stateY: 0}; //States set for the subject, and Y client
-   
   },
   
   //Gets the initial click on drag and adds the event listeners onto the document
   dragStart: function(data){
+  //constructor variable which binds the value from the client-Yaxis.
   this.lastClientY = data.clientY;
   document.addEventListener("mousemove", this.drag);
   document.addEventListener("mouseup", this.dragStop);
@@ -28,13 +34,13 @@ var Knob = React.createClass({
     var delta = data.clientY - this.lastClientY;
     //console.log("clientY: " + data.clientY + " state  of Y: " + this.state.stateY + " last client: " + this.lastClientY + " delta: " + delta);
     
-    //If the cursor went south, then then knob will be lowered (Going Down)
+    //If the cursor went south, then then knob will be lowered (Going Down) (1st it will decrease the this.i and then do a coditional check against this.j, if true, then it will allow the knob to turn)
     if((data.clientY > this.state.stateY) && (this.state.subject >=1))
     { 
       this.i--;
       if(this.i < this.j)
       {
-        this.j -= 20;
+        this.j -= 10;
         //Updates the state of the subject variable in react
         this.setState({subject: this.state.subject -1});
         //Changes the DOM node property of class (className) using the reach findDOMNode property, with the ref of subject
@@ -45,13 +51,13 @@ var Knob = React.createClass({
       }
     }
     
-    //if the knob went north, then the knob will be raised (going Up)
+    //if the knob went north, then the knob will be raised (going Up) (1st it will increase the this.i and then do a coditional check against this.j, if true, then it will allow the knob to turn)
     else if((delta < this.state.stateY) && (this.state.subject < 14))
     { 
       this.i++;
       if(this.i > this.j)
       {
-        this.j +=20;
+        this.j +=10;
         //Updates the state of the subject variable in react
         this.setState({subject: this.state.subject +1});
         //Changes the DOM node property of class (className) using the reach findDOMNode property, with the ref of subject
