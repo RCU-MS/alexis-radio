@@ -7,7 +7,7 @@ var divStyle2 = {marginLeft: '11.5%', marginTop: '-21.5%', position: 'absolute'}
 //Knob class created
 var Knob = React.createClass({
   getInitialState: function(){
-    //constructor variable used for detecting if the delta has been changed enough to then start the scroll wheel
+    //construcctor variable used for detecting if the delta has been changed enough to then start the scroll wheel
     this.i = 0;
     //Constructor variable usfed to do compairson to start the scroll wheel
     this.j = 10;
