@@ -16,7 +16,7 @@ var Knob = React.createClass({
   
   //Gets the initial click on drag and adds the event listeners onto the document
   dragStart: function(data){
-  //constructor variable which binds the value from the client-Yaxis.
+  //constructor variable which binds tfhe value from the client-Yaxis.
   this.lastClientY = data.clientY;
   document.addEventListener("mousemove", this.drag);
   document.addEventListener("mouseup", this.dragStop);
