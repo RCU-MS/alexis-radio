@@ -1,7 +1,11 @@
-.tuner-1, .tuner-2, .tuner-3, .tuner-4, .tuner-5, .tuner-6, .tuner-7, .tuner-8, .tuner-9, .tuner-10, .tuner-11, .tuner-12, .tuner-13, .tuner-14{
+.tuner-0, .tuner-1, .tuner-2, .tuner-3, .tuner-4, .tuner-5, .tuner-6, .tuner-7, .tuner-8, .tuner-9, .tuner-10, .tuner-11, .tuner-12, .tuner-13, .tuner-14{
 	background: url(sprites.png) no-repeat;
 }
-
+.tuner-0{
+	background-position: 0 -1430px ;
+	width: 465px;
+	height: 107px;
+}
 .tuner-1{
 	background-position: 0 -1430px ;
 	width: 465px;

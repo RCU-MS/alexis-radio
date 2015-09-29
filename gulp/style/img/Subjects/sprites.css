@@ -1,7 +1,11 @@
-.subject-1, .subject-2, .subject-3, .subject-4, .subject-5, .subject-6, .subject-7, .subject-8, .subject-9, .subject-10, .subject-11, .subject-12, .subject-13, .subject-14{
+.subject-0, .subject-1, .subject-2, .subject-3, .subject-4, .subject-5, .subject-6, .subject-7, .subject-8, .subject-9, .subject-10, .subject-11, .subject-12, .subject-13, .subject-14{
 	background: url(sprites.png) no-repeat;
 }
-
+.subject-0{
+	background-position: -3152px 0;
+	width: 244px;
+	height: 243px;
+}
 .subject-1{
 	background-position: -3152px 0;
 	width: 244px;
