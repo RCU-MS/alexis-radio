@@ -4,7 +4,7 @@ var divStyle2 = {marginLeft: '11.5%', marginTop: '-21.5%', position: 'absolute'}
 var Knob = React.createClass({
   getInitialState: function(){
     this.i = 0;
-    this.j = 20;
+    this.j = 10;
     return{subject: 1, stateY: 0}; //States set for the subject, and Y client
    
   },
@@ -26,7 +26,7 @@ var Knob = React.createClass({
   drag: function(data){
     //calculates the change in direction
     var delta = data.clientY - this.lastClientY;
-    //console.log("clientY: " + data.clientY + " state  of Y: " + this.state.stateY + " last client: " + this.lastClientY + " delta: " + delta);
+    console.log("clientY: " + data.clientY + " state  of Y: " + this.state.stateY + " last client: " + this.lastClientY + " delta: " + delta);
     
     //If the cursor went south, then then knob will be lowered (Going Down)
     if((data.clientY > this.state.stateY) && (this.state.subject >=1))
@@ -34,7 +34,7 @@ var Knob = React.createClass({
       this.i--;
       if(this.i < this.j)
       {
-        this.j -= 20;
+        this.j -= 10;
         //Updates the state of the subject variable in react
         this.setState({subject: this.state.subject -1});
         //Changes the DOM node property of class (className) using the reach findDOMNode property, with the ref of subject
@@ -51,7 +51,7 @@ var Knob = React.createClass({
       this.i++;
       if(this.i > this.j)
       {
-        this.j +=20;
+        this.j +=10;
         //Updates the state of the subject variable in react
         this.setState({subject: this.state.subject +1});
         //Changes the DOM node property of class (className) using the reach findDOMNode property, with the ref of subject
