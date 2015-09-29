@@ -28,7 +28,7 @@ var Knob = React.createClass({
     document.removeEventListener("mouseup", this.dragStop);
   },
    
-   //The calculation and manipulation for direction of knob turn
+   //The calculation and manipbulation for direction of knob turn
   drag: function(data){
     //calculates the change in direction
     var delta = data.clientY - this.lastClientY;
