@@ -14,7 +14,7 @@ var Knob = React.createClass({
     return{subject: 1, stateY: 0}; //States set for the subject, and Y client
   },
   
-  //Gets the initial click on drag and adds the event listeners onto the document
+  //Gets the initial click on drcag and adds the event listeners onto the document
   dragStart: function(data){
   //constructor variable which binds the value from the client-Yaxis.
   this.lastClientY = data.clientY;
