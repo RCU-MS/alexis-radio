@@ -22,7 +22,7 @@ var Knob = React.createClass({
   document.addEventListener("mouseup", this.dragStop);
   },
   
-  //Removes the event listener from the document
+  //Removes the event listener ffrom the document
   dragStop: function(){
     document.removeEventListener("mousemove", this.drag);
     document.removeEventListener("mouseup", this.dragStop);
